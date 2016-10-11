@@ -2,280 +2,280 @@
 "CodeKitInfo": "This is a CodeKit 2.x project configuration file. It is designed to sync project settings across multiple machines. MODIFYING THE CONTENTS OF THIS FILE IS A POOR LIFE DECISION. If you do so, you will likely cause CodeKit to crash. This file is not useful unless accompanied by the project that created it in CodeKit 2. This file is not backwards-compatible with CodeKit 1.x. For more information, see: http:\/\/incident57.com\/codekit",
 "creatorBuild": "19127",
 "files": {
-	"\/web\/app\/app.css": {
+	"\/app\/app.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/app.css",
+		"inputAbbreviatedPath": "\/app\/app.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/web\/app\/detect.js": {
+	"\/app\/detect.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/detect.js",
-		"outputAbbreviatedPath": "\/web\/app\/min\/detect-min.js",
+		"inputAbbreviatedPath": "\/app\/detect.js",
+		"outputAbbreviatedPath": "\/app\/min\/detect-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/app\/helpers.js": {
+	"\/app\/helpers.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/helpers.js",
-		"outputAbbreviatedPath": "\/web\/app\/min\/helpers-min.js",
+		"inputAbbreviatedPath": "\/app\/helpers.js",
+		"outputAbbreviatedPath": "\/app\/min\/helpers-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/app\/main.js": {
+	"\/app\/main.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/main.js",
-		"outputAbbreviatedPath": "\/web\/app\/min\/main-min.js",
+		"inputAbbreviatedPath": "\/app\/main.js",
+		"outputAbbreviatedPath": "\/app\/min\/main-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/app\/min\/detect-min.js": {
+	"\/app\/min\/detect-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/min\/detect-min.js",
-		"outputAbbreviatedPath": "\/web\/app\/min\/min\/detect-min-min.js",
+		"inputAbbreviatedPath": "\/app\/min\/detect-min.js",
+		"outputAbbreviatedPath": "\/app\/min\/min\/detect-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/app\/min\/helpers-min.js": {
+	"\/app\/min\/helpers-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/min\/helpers-min.js",
-		"outputAbbreviatedPath": "\/web\/app\/min\/min\/helpers-min-min.js",
+		"inputAbbreviatedPath": "\/app\/min\/helpers-min.js",
+		"outputAbbreviatedPath": "\/app\/min\/min\/helpers-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/app\/min\/main-min.js": {
+	"\/app\/min\/main-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/min\/main-min.js",
-		"outputAbbreviatedPath": "\/web\/app\/min\/min\/main-min-min.js",
+		"inputAbbreviatedPath": "\/app\/min\/main-min.js",
+		"outputAbbreviatedPath": "\/app\/min\/min\/main-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/app\/min\/people-min.js": {
+	"\/app\/min\/people-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/min\/people-min.js",
-		"outputAbbreviatedPath": "\/web\/app\/min\/min\/people-min-min.js",
+		"inputAbbreviatedPath": "\/app\/min\/people-min.js",
+		"outputAbbreviatedPath": "\/app\/min\/min\/people-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/app\/min\/table-min.js": {
+	"\/app\/min\/table-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/min\/table-min.js",
-		"outputAbbreviatedPath": "\/web\/app\/min\/min\/table-min-min.js",
+		"inputAbbreviatedPath": "\/app\/min\/table-min.js",
+		"outputAbbreviatedPath": "\/app\/min\/min\/table-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/app\/min\/timekeeper-min.js": {
+	"\/app\/min\/timekeeper-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/min\/timekeeper-min.js",
-		"outputAbbreviatedPath": "\/web\/app\/min\/min\/timekeeper-min-min.js",
+		"inputAbbreviatedPath": "\/app\/min\/timekeeper-min.js",
+		"outputAbbreviatedPath": "\/app\/min\/min\/timekeeper-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/app\/min\/ui-min.js": {
+	"\/app\/min\/ui-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/min\/ui-min.js",
-		"outputAbbreviatedPath": "\/web\/app\/min\/min\/ui-min-min.js",
+		"inputAbbreviatedPath": "\/app\/min\/ui-min.js",
+		"outputAbbreviatedPath": "\/app\/min\/min\/ui-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/app\/people.js": {
+	"\/app\/people.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/people.js",
-		"outputAbbreviatedPath": "\/web\/app\/min\/people-min.js",
+		"inputAbbreviatedPath": "\/app\/people.js",
+		"outputAbbreviatedPath": "\/app\/min\/people-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/app\/table.js": {
+	"\/app\/table.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/table.js",
-		"outputAbbreviatedPath": "\/web\/app\/min\/table-min.js",
+		"inputAbbreviatedPath": "\/app\/table.js",
+		"outputAbbreviatedPath": "\/app\/min\/table-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/app\/timekeeper.js": {
+	"\/app\/timekeeper.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/timekeeper.js",
-		"outputAbbreviatedPath": "\/web\/app\/min\/timekeeper-min.js",
+		"inputAbbreviatedPath": "\/app\/timekeeper.js",
+		"outputAbbreviatedPath": "\/app\/min\/timekeeper-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/app\/ui.js": {
+	"\/app\/ui.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/app\/ui.js",
-		"outputAbbreviatedPath": "\/web\/app\/min\/ui-min.js",
+		"inputAbbreviatedPath": "\/app\/ui.js",
+		"outputAbbreviatedPath": "\/app\/min\/ui-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/assets\/base\/jquery-ui.css": {
+	"\/assets\/base\/jquery-ui.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/assets\/base\/jquery-ui.css",
+		"inputAbbreviatedPath": "\/assets\/base\/jquery-ui.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/web\/assets\/base\/jquery-ui.js": {
+	"\/assets\/base\/jquery-ui.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/assets\/base\/jquery-ui.js",
-		"outputAbbreviatedPath": "\/web\/assets\/base\/min\/jquery-ui-min.js",
+		"inputAbbreviatedPath": "\/assets\/base\/jquery-ui.js",
+		"outputAbbreviatedPath": "\/assets\/base\/min\/jquery-ui-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/assets\/base\/jquery.min.js": {
+	"\/assets\/base\/jquery.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/assets\/base\/jquery.min.js",
-		"outputAbbreviatedPath": "\/web\/assets\/base\/min\/jquery.min-min.js",
+		"inputAbbreviatedPath": "\/assets\/base\/jquery.min.js",
+		"outputAbbreviatedPath": "\/assets\/base\/min\/jquery.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/assets\/base\/jsPlumb-2.1.7-min.js": {
+	"\/assets\/base\/jsPlumb-2.1.7-min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/assets\/base\/jsPlumb-2.1.7-min.js",
-		"outputAbbreviatedPath": "\/web\/assets\/base\/min\/jsPlumb-2.1.7-min-min.js",
+		"inputAbbreviatedPath": "\/assets\/base\/jsPlumb-2.1.7-min.js",
+		"outputAbbreviatedPath": "\/assets\/base\/min\/jsPlumb-2.1.7-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/assets\/base\/lodash.min.js": {
+	"\/assets\/base\/lodash.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/assets\/base\/lodash.min.js",
-		"outputAbbreviatedPath": "\/web\/assets\/base\/min\/lodash.min-min.js",
+		"inputAbbreviatedPath": "\/assets\/base\/lodash.min.js",
+		"outputAbbreviatedPath": "\/assets\/base\/min\/lodash.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/assets\/base\/min\/jsPlumb-2.1.7-min-min.js": {
+	"\/assets\/base\/min\/jsPlumb-2.1.7-min-min.js": {
 		"fileType": 64,
 		"ignore": 1,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/assets\/base\/min\/jsPlumb-2.1.7-min-min.js",
-		"outputAbbreviatedPath": "\/web\/assets\/base\/min\/min\/jsPlumb-2.1.7-min-min-min.js",
+		"inputAbbreviatedPath": "\/assets\/base\/min\/jsPlumb-2.1.7-min-min.js",
+		"outputAbbreviatedPath": "\/assets\/base\/min\/min\/jsPlumb-2.1.7-min-min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/assets\/base\/moment.min.js": {
+	"\/assets\/base\/moment.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/assets\/base\/moment.min.js",
-		"outputAbbreviatedPath": "\/web\/assets\/base\/min\/moment.min-min.js",
+		"inputAbbreviatedPath": "\/assets\/base\/moment.min.js",
+		"outputAbbreviatedPath": "\/assets\/base\/min\/moment.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/assets\/base\/prefixfree.min.js": {
+	"\/assets\/base\/prefixfree.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/assets\/base\/prefixfree.min.js",
-		"outputAbbreviatedPath": "\/web\/assets\/base\/min\/prefixfree.min-min.js",
+		"inputAbbreviatedPath": "\/assets\/base\/prefixfree.min.js",
+		"outputAbbreviatedPath": "\/assets\/base\/min\/prefixfree.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/assets\/base\/showdown.min.js": {
+	"\/assets\/base\/showdown.min.js": {
 		"fileType": 64,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/assets\/base\/showdown.min.js",
-		"outputAbbreviatedPath": "\/web\/assets\/base\/min\/showdown.min-min.js",
+		"inputAbbreviatedPath": "\/assets\/base\/showdown.min.js",
+		"outputAbbreviatedPath": "\/assets\/base\/min\/showdown.min-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
-	"\/web\/assets\/base\/sourceSansPro.css": {
+	"\/assets\/base\/sourceSansPro.css": {
 		"fileType": 16,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/assets\/base\/sourceSansPro.css",
+		"inputAbbreviatedPath": "\/assets\/base\/sourceSansPro.css",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
 		},
-	"\/web\/index.html": {
+	"\/index.html": {
 		"fileType": 8192,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/web\/index.html",
+		"inputAbbreviatedPath": "\/index.html",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0
