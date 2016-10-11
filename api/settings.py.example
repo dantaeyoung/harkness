@@ -1,0 +1,4 @@
+mongouser = 'USERNAME'
+mongopass = 'PASSWORD'
+mongourl = 'HOST:PORT/DB'
+
