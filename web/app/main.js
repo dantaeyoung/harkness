@@ -20,7 +20,8 @@ $(function() {
    // make UI
 	ui.start();
 
-   // load people and make table
+	storage.start();
+// load people and make table
 	people.start();
 
 	table.start();

@@ -88,6 +88,17 @@
 		"outputStyle": 1,
 		"syntaxCheckerStyle": 1
 		},
+	"\/web\/app\/min\/storage-min.js": {
+		"fileType": 64,
+		"ignore": 1,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/web\/app\/min\/storage-min.js",
+		"outputAbbreviatedPath": "\/web\/app\/min\/min\/storage-min-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
 	"\/web\/app\/min\/table-min.js": {
 		"fileType": 64,
 		"ignore": 1,
@@ -127,6 +138,17 @@
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/web\/app\/people.js",
 		"outputAbbreviatedPath": "\/web\/app\/min\/people-min.js",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"outputStyle": 1,
+		"syntaxCheckerStyle": 1
+		},
+	"\/web\/app\/storage.js": {
+		"fileType": 64,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"inputAbbreviatedPath": "\/web\/app\/storage.js",
+		"outputAbbreviatedPath": "\/web\/app\/min\/storage-min.js",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"outputStyle": 1,

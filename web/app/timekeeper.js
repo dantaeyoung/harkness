@@ -20,7 +20,8 @@ timekeeper.setCurrentPerson = function(p) {
     if(typeof timekeeper.prevSpeech.name !== "undefined") {
         prevS.prevName = timekeeper.prevSpeech.name;
         timekeeper.log.push(prevS);
-        timekeeper.updateDurations(prevS.name, p, prevS.duration);
+
+        timekeeper.updateDurations(prevS, prevS.name, p, prevS.duration);
     }
 
     timekeeper.currentSpeech.name = p;
@@ -30,13 +31,15 @@ timekeeper.setCurrentPerson = function(p) {
 }
 
 
-timekeeper.updateDurations = function(pn, nn, d) {
+timekeeper.updateDurations = function(prevS, pn, nn, d) {
     timekeeper.personDurations[nn] += d;
 
     timekeeper.linkDurations[pn + "-" + nn] += d;
 
     ui.updateLog(pn, nn, d);
     table.updateLinks(pn, nn, d);
+
+    storage.storeLog(prevS);
 }
 
 timekeeper.getMaxLinkDuration = function() {
