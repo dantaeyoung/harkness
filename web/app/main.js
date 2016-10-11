@@ -25,7 +25,7 @@ $(function() {
 
 	table.start();
 
-    var loadString = '{"AT":{"top":530,"left":193},"CK":{"top":15,"left":135},"CD":{"top":511,"left":90},"DC":{"top":320,"left":447},"DP":{"top":505,"left":435},"IN":{"top":44,"left":423},"JP":{"top":128,"left":78},"MS":{"top":120,"left":451},"NJ":{"top":418,"left":62},"RN":{"top":26,"left":328},"RS":{"top":538,"left":338},"TZ":{"top":324,"left":57},"VL":{"top":232,"left":454},"VW":{"top":409,"left":445},"YK":{"top":223,"left":73},"DT":{"top":20,"left":235}}';
+    var loadString = '{"AT":{"top":523,"left":129},"CK":{"top":37,"left":88},"CD":{"top":488,"left":59},"DC":{"top":338,"left":415},"DP":{"top":525,"left":337},"IN":{"top":9,"left":199},"JP":{"top":87,"left":34},"MS":{"top":144,"left":390},"NJ":{"top":387,"left":30},"RN":{"top":57,"left":356},"RS":{"top":544,"left":231},"TZ":{"top":280,"left":-3},"VL":{"top":244,"left":406},"VW":{"top":427,"left":388},"YK":{"top":188,"left":22},"DT":{"top":21,"left":284}}';
 
 	table.loadLocations(loadString);
 
