@@ -1,0 +1,74 @@
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.flexcontainer {
+	height:100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+#persondiv {
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+}
+.centerdiv {
+	position: absolute;
+}
+
+.person { 
+}
+
+
+.queueContents {
+    height: 20px;
+    width: 100px;
+    padding: 5px 10px;
+    border: 1px solid black;
+}
+
+.person {
+    position: absolute;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+    margin: 10px; 
+ height: 100%;
+    border: 5px solid white;
+}
+
+.person-inner {
+	width: 30px;
+	height: 30px;
+	padding: 10px;
+	border: 5px solid green;
+  background-color: white;
+}
+
+.person.speaking .person-inner {
+    background-color: green !important;
+}
+
+.person.highlight {
+    border: 5px solid yellow;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+

@@ -1,0 +1,1 @@
+ui={},ui.makeUI=function(){$("button").click(function(e){"dragEnable"==e.toElement.name,"dragDisable"==e.toElement.name,"locSave"==e.toElement.name&&table.promptSaveLocations(),"locLoad"==e.toElement.name&&table.promptLoadLocations()})},ui.changeQueueContents=function(e){$(".queueContents").text(e)},ui.start=function(){ui.makeUI()};
