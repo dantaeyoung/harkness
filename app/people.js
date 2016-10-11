@@ -4,24 +4,30 @@ people.data = {};
 
 people.loadPeople = function() {
 
-    //placeholder
-    people.data['BJ'] = {};
-    people.data['BJ']['name'] = "Brow Jemmerwoman";
+    var manualList = [
+        ["AT", "Andrew Tinari"],
+        ["CK", "Chad Paul Karty"],
+        ["CD", "Clara Celeste Dobiesz Dykstra"],
+        ["DC", "Dexter Callender"],
+        ["DP", "Dongfang Pang"],
+        ["IN", "Isabel Narea"],
+        ["JP", "Julie Pedtke"],
+        ["MS", "Miranda Shugars"],
+        ["NJ", "Nishant Jacob"],
+        ["RN", "Rachel Ka-Yen Ng"],
+        ["RS", "Ray Santay"],
+        ["TZ", "Taylor Zanke"],
+        ["VL", "Valerie Lechene"],
+        ["VW", "Violet Whitney"],
+        ["YK", "Yassi Kazemzadeh"],
+        ["DT", "Dan Taeyoung"]
+    ] 
 
-    people.data['JJ'] = {};
-    people.data['JJ']['name'] = "Jeannie Jack";
-
-    people.data['DBA'] = {};
-    people.data['DBA']['name'] = "Daria Buckly Adams";
-
-    people.data['ZE'] = {};
-    people.data['ZE']['name'] = "Zena Eeno";
-
-    people.data['HM'] = {};
-    people.data['HM']['name'] = "Hellanie Moss";
-
-    people.data['TD'] = {};
-    people.data['TD']['name'] = "Tan Daybun";
+    _.each(manualList, function(p) {
+        people.data[p[0]] = {};
+        people.data[p[0]]['name'] = p[1];
+        people.data[p[0]]['firstname'] = p[1].split(" ")[0];
+    });
 
     _.forEach(people.data, function(v, k) {
         people.listOfNames.push(k.toUpperCase());

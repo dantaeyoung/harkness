@@ -20,6 +20,9 @@ detect.startDetection = function() {
             detect.setQueue("");
             $(".person").removeClass("highlight");
         }
+         if (e.keyCode == 8) { //backspace
+            detect.setQueue(detect.currentQueue.slice(0, -1));
+         }
     });
 
     $(document).keypress(function(data) {

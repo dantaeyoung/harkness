@@ -35,7 +35,7 @@ timekeeper.updateDurations = function(pn, nn, d) {
     timekeeper.linkDurations[pn + "-" + nn] += d;
 
     ui.updateLog(pn, nn, d);
-    table.updateLinks();
+    table.updateLinks(pn, nn, d);
 }
 
 timekeeper.getMaxLinkDuration = function() {

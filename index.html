@@ -7,6 +7,7 @@
 <script src="assets/base/jquery.min.js"></script>
 <script src="assets/base/lodash.min.js"></script>
 <script src="assets/base/prefixfree.min.js"></script>
+<script src="assets/base/moment.min.js"></script>
 <script src="assets/base/jsPlumb-2.1.7-min.js"></script>
 
 <link href='app/app.css' rel='stylesheet' type='text/css'>
@@ -30,19 +31,23 @@ CUSTOMIZE BELOW
 
 </head>
 <body>
+<div class="container">
+			<div id="persondiv"></div>
+			<div id="plumbdiv"></div>
+			<div id="gradient"></div>
+</div>
 <div id="uimenu">
+    <div id="log"></div>
 	<div id="dragbuttons">
 		<button name="dragEnable">Enable drag</button>
 		<button name="dragDisable">Disable drag</button>
 		<button name="locSave">Save Locations</button>
 		<button name="locLoad">Load Locations</button>
+		<button name="graphToggle">Toggle Graph</button>
+		<button name="graphWeightsToggle">Toggle Graph Weights</button>
+		<button name="detailsToggle">Toggle TimeDetails</button>
 	</div>
 	<div class="queueContents"></div>
-    <div id="log"></div>
-</div>
-<div class="flexcontainer">
-			<div id="persondiv"></div>
-			<div id="plumbdiv"></div>
 </div>
 </body>
 </html>

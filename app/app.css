@@ -1,3 +1,50 @@
+@-webkit-keyframes BackgroundGradient {
+    0%{background-position:0% 7%}
+    50%{background-position:100% 94%}
+    100%{background-position:0% 7%}
+}
+@-moz-keyframes BackgroundGradient {
+    0%{background-position:0% 7%}
+    50%{background-position:100% 94%}
+    100%{background-position:0% 7%}
+}
+@keyframes BackgroundGradient { 
+    0%{background-position:0% 7%}
+    50%{background-position:100% 94%}
+    100%{background-position:0% 7%}
+}
+
+#uimenu {
+    background-color: white;
+    z-index: 5;
+    position: fixed;
+    bottom: 0px;
+}
+
+button {
+  outline: none;
+    
+}
+#plumbdiv {
+    z-index: 5;
+}
+#gradient {
+    opacity: 0.4;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    background: linear-gradient(293deg, #ef3ef9, #4dc831, #ff8a3b, #f74278, #625fff, #ffe286, #86e3ff, #ff86c5, #5ee669, #ffffff, #af6cc3, #503d56, #dd33aa);
+    background-size: 2600% 2600%;
+
+    -webkit-animation: BackgroundGradient 100s ease infinite;
+    -moz-animation: BackgroundGradient 100s ease infinite;
+    animation: BackgroundGradient 100s ease infinite;
+
+}
+
 body {
 	margin: 0px;
 	padding: 0px;
@@ -12,24 +59,27 @@ body {
 	flex-direction: row;
 }
 #persondiv {
-    top: 0px;
-    left: 0px;
-    width: 100vw;
-    height: 100vh;
 }
 .centerdiv {
 	position: absolute;
 }
-
+path {
+    transition: stroke-width 2s;
+    transition: stroke 2s;
+}
 .person { 
 }
 
 
 .queueContents {
-    height: 20px;
-    width: 100px;
+    height: 18px;
+    width: 100%;
     padding: 5px 10px;
-    border: 1px solid black;
+    background-color: #EEE;
+    font-weight: bold;
+    color: #D83435;
+    font-size: 1em;
+    
 }
 
 .person {
@@ -42,14 +92,14 @@ body {
   user-select: none;           /* Non-prefixed version, currently
                                   not supported by any browser */
     margin: 10px; 
-    border: 10px solid white;
+    border: 10px solid rgba(0,0,0,0);
     border-radius: 45px;
     z-index: 10;
 }
 
 .person-inner {
-	width: 50px;
-	height: 50px;
+	width: 40px;
+	height: 40px;
 	padding: 5px;
 	border: 5px solid #37449E;
   background-color: white;
@@ -71,7 +121,7 @@ body {
 }
 
 .person.highlight {
-    border: 10px double #AAA;
+    border: 10px double #D83435;
 }
 
 .initials {
@@ -93,3 +143,16 @@ body {
                                   not supported by any browser */
 }
 
+.details {
+    margin-left: 3px;
+}
+
+#log {
+    resize: vertical;
+    width: 100vw;
+    height: 50px;
+    overflow-y: scroll;
+    font-size: 0.8em;
+    padding: 10px;
+    border-top: 5px solid white;
+}

@@ -1,19 +1,27 @@
 table = {};
 table.linkPixelPerSecond = 1;
-table.linkWidthMin = 1.5;
-table.linkWidthMax = 40;
+table.linkWidthMin = 0.75;
+table.linkWidthMax = 30;
+table.linkColor = "#000";
+table.responseColor = "#B0851C";
+table.showWeights = true;
+table.linkWidthNoWeightSpoken = 7;
+table.linkColorNoWeight = "rgba(100,100,100,200)";
 
 table.makeJsPlumb = function() {
     jsPlumb.ready(function () {
 
         jsPlumb.importDefaults({
-            PaintStyle: { lineWidth: 40, strokeStyle: "#444" },
+            PaintStyle: { lineWidth: 40, strokeStyle: "#000" },
             Connector: "Straight",
             ConnectionsDetachable: false,
             Container: "plumbdiv"
         });
 
+
         var shapes = jsPlumb.getSelector(".person");
+        jsPlumb.draggable(shapes);
+        jsPlumb.setDraggable(jsPlumb.getSelector(".person"), false)
 
         // suspend drawing and initialise.
         jsPlumb.batch(function () {
@@ -39,6 +47,7 @@ table.makeJsPlumb = function() {
         });
         $(".link path").each(function() {
             $(this).attr("stroke-width", table.linkWidthMin);
+            $(this).attr("stroke-style", table.linkColor);
         });
 
     });
@@ -71,7 +80,16 @@ table.makeTable = function() {
     });
 }
 
-table.updateLinks = function() {
+table.toggleWeights = function() {
+    table.showWeights = !table.showWeights;
+    table.updateLinks();
+}
+
+table.updateLinks = function(pn, nn, d) {
+
+    console.log(pn, nn, d);
+    if(pn < nn) { var responsep1 = pn; var responsep2 = nn; }
+    else { var responsep1 = nn; var responsep2 = pn; }
 
     var maxDur = timekeeper.getMaxLinkDuration();
 
@@ -86,9 +104,29 @@ table.updateLinks = function() {
                 var linkd = timekeeper.getLinkDurationsUni(p1, p2);
 
                 // scale min and max proportionally to min and max
-                var scaledld = helpers.mapRange([0, maxDur], [table.linkWidthMin, table.linkWidthMax], linkd);
+                //
+                if(table.showWeights) {
+                    var lineWidth = helpers.mapRange([0, maxDur], [table.linkWidthMin, table.linkWidthMax], linkd);
+                    link.attr("stroke-width", lineWidth);
 
-                link.attr("stroke-width", scaledld);
+                    if(p1 == responsep1 && p2 == responsep2) { 
+                        link.attr("stroke", table.responseColor);
+                    } else { 
+                        link.attr("stroke", table.linkColor);  
+                    }
+
+                } else {
+
+                    if(p1 == responsep1 && p2 == responsep2) { 
+                        link.attr("stroke", table.responseColor);
+                        link.attr("stroke-width", table.linkWidthNoWeightSpoken);
+                    } else { 
+                        link.attr("stroke", table.linkColor);
+                        link.attr("stroke-width", table.linkWidthMin);
+                    }
+                }
+
+
             }
         });
     });
@@ -129,9 +167,16 @@ table.loadLocations = function(locstr) {
     _.forEach(locations, function(v, k) {
        $(".person-" + k).offset(v);
     });
+
+    jsPlumb.repaintEverything();
+    table.updateLinks();
 }
 
 table.start = function() {
+    table.makeAll();
+}
+
+table.makeAll = function() {
     table.makeTable();
     table.makeJsPlumb();
 }

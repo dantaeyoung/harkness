@@ -5,15 +5,11 @@ ui.makeUI = function() {
 
     $("button").click(function(e) {
         if(e.toElement.name == "dragEnable") {
-            $(".person").each(function() {
-                jsPlumb.setDraggable(this, true);
-            });
+            jsPlumb.setDraggable(jsPlumb.getSelector(".person"), true)
         }
         if(e.toElement.name == "dragDisable") {
-            $(".person").each(function() {
-                jsPlumb.setDraggable(this, false);
-            });
-           
+            jsPlumb.setDraggable(jsPlumb.getSelector(".person"), false)
+            table.updateLinks();
         }
         if(e.toElement.name == "locSave") {
             table.promptSaveLocations();     
@@ -21,15 +17,34 @@ ui.makeUI = function() {
         if(e.toElement.name == "locLoad") {
             table.promptLoadLocations();     
         }
+        if(e.toElement.name == "graphToggle") {
+            $("#plumbdiv").fadeToggle(500);
+        }
+        if(e.toElement.name == "graphWeightsToggle") {
+            table.toggleWeights();
+        }
+        if(e.toElement.name == "detailsToggle") {
+            $(".details").fadeToggle(500);
+        }
+        $("button").blur();
+        $(".queueContents").focus();
     });
 
 }
 
 ui.updateLog = function(pn, nn, d) {
-    var txt = people.data[nn]['name'] + " responded to " + people.data[pn]['name'] + " for " + (d/1000) + " seconds.";
-    console.log(txt);
-    var logDiv = $("<div></div>").text(txt);
+    var txt = people.data[nn]['firstname'] + " responded to " + people.data[pn]['firstname'];
+    var details = " for " + helpers.humanizeDuration(d) + ".";
+    console.log(txt + details);
+    var logDiv = $("<div class='logentry'></div>");
+    logDiv.append($("<span class='who'>" + txt + "</span>"));
+    logDiv.append($("<span class='details'>" + details + "</span>"));
     $("#log").append(logDiv);
+    updateScroll();
+}
+
+function updateScroll(){
+    $("#log").animate({ scrollTop: $("#log")[0].scrollHeight}, "slow");
 }
 
 
