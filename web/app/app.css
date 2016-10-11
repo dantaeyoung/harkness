@@ -64,8 +64,7 @@ body {
 	position: absolute;
 }
 path {
-    transition: stroke-width 2s;
-    transition: stroke 2s;
+    transition: all 2s;
 }
 .person { 
 }
@@ -155,4 +154,11 @@ path {
     font-size: 0.8em;
     padding: 10px;
     border-top: 5px solid white;
+}
+
+#log .details {
+    transition: opacity 1s;
+}
+#log.hideDetails .details {
+    opacity: 0;
 }

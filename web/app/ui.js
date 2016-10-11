@@ -1,5 +1,5 @@
 ui = {};
-
+ui.showDetails = true;
 
 ui.makeUI = function() {
 
@@ -24,7 +24,7 @@ ui.makeUI = function() {
             table.toggleWeights();
         }
         if(e.toElement.name == "detailsToggle") {
-            $(".details").fadeToggle(500);
+            ui.toggleDetails();
         }
         $("button").blur();
         $(".queueContents").focus();
@@ -34,7 +34,7 @@ ui.makeUI = function() {
 
 ui.updateLog = function(pn, nn, d) {
     var txt = people.data[nn]['firstname'] + " responded to " + people.data[pn]['firstname'];
-    var details = " for " + helpers.humanizeDuration(d) + ".";
+    var details = " for " + helpers.humanizeDuration(d) + " at " + moment().format("hh:mm a") + ".";
     console.log(txt + details);
     var logDiv = $("<div class='logentry'></div>");
     logDiv.append($("<span class='who'>" + txt + "</span>"));
@@ -47,6 +47,15 @@ function updateScroll(){
     $("#log").animate({ scrollTop: $("#log")[0].scrollHeight}, "slow");
 }
 
+ui.toggleDetails = function() {
+    ui.showDetails = ! ui.showDetails;
+
+    if(ui.showDetails) {
+        $("#log").addClass("hideDetails");
+    } else {
+        $("#log").removeClass("hideDetails");
+    }
+}
 
 ui.changeQueueContents = function(t) {
     $(".queueContents").text(t);
