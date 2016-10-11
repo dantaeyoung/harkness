@@ -9,7 +9,7 @@ detect.setQueue = function(s) {
 }
 
 detect.startDetection = function() {
-    $(".person").click(function(e) {
+    $(".person").dblclick(function(e) {
         var clickedIN = $(e.target.closest(".person")).attr("name");
         detect.setCurrentPersonByIn(clickedIN);
         detect.setQueue("");

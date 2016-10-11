@@ -1,0 +1,1 @@
+helpers={},helpers.mapRange=function(e,n,r){return n[0]+(r-e[0])*(n[1]-n[0])/(e[1]-e[0])},helpers.cloneObj=function(e){return JSON.parse(JSON.stringify(e))};

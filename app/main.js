@@ -21,9 +21,11 @@ $(function() {
 	ui.start();
 
    // load people and make table
+	people.start();
+
 	table.start();
 
-	table.loadLocations('{"BJ":{"top":192,"left":581.5},"JJ":{"top":191,"left":348.5},"DBA":{"top":362,"left":206.5},"ZE":{"top":496,"left":313.5},"HM":{"top":539,"left":479.5},"TD":{"top":409,"left":631.5}}'); // TESTING
+	table.loadLocations('{"BJ":{"top":144,"left":561},"JJ":{"top":146,"left":284},"DBA":{"top":348,"left":150},"ZE":{"top":567,"left":280},"HM":{"top":555,"left":526},"TD":{"top":355,"left":623}}'); // TESTING
 
    // detect keypresses and change current status
 	detect.start();

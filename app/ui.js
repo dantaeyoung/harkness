@@ -5,10 +5,15 @@ ui.makeUI = function() {
 
     $("button").click(function(e) {
         if(e.toElement.name == "dragEnable") {
-//            $(".draggable").draggable("enable");
+            $(".person").each(function() {
+                jsPlumb.setDraggable(this, true);
+            });
         }
         if(e.toElement.name == "dragDisable") {
- //           $(".draggable").draggable("disable");
+            $(".person").each(function() {
+                jsPlumb.setDraggable(this, false);
+            });
+           
         }
         if(e.toElement.name == "locSave") {
             table.promptSaveLocations();     
@@ -18,6 +23,13 @@ ui.makeUI = function() {
         }
     });
 
+}
+
+ui.updateLog = function(pn, nn, d) {
+    var txt = people.data[nn]['name'] + " responded to " + people.data[pn]['name'] + " for " + (d/1000) + " seconds.";
+    console.log(txt);
+    var logDiv = $("<div></div>").text(txt);
+    $("#log").append(logDiv);
 }
 
 
