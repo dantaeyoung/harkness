@@ -18,6 +18,7 @@ timekeeper.setCurrentPerson = function(p) {
     prevS.duration = prevS.endedAt - prevS.startedAt;
 
     if(typeof timekeeper.prevSpeech.name !== "undefined") {
+        prevS.prevName = timekeeper.prevSpeech.name;
         timekeeper.log.push(prevS);
         timekeeper.updateDurations(prevS.name, p, prevS.duration);
     }

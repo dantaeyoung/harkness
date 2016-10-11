@@ -1,7 +1,7 @@
 table = {};
 table.linkPixelPerSecond = 1;
 table.linkWidthMin = 0.75;
-table.linkWidthMax = 30;
+table.linkWidthMax = 20;
 table.linkColor = "#000";
 table.responseColor = "#F5A645";
 table.showWeights = true;
