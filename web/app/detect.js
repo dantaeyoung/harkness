@@ -4,7 +4,7 @@ detect.currentQueue = "";
 
 detect.setQueue = function(s) {
     $(".person").removeClass("highlight");
-    detect.currentQueue = s;
+    detect.currentQueue = s.toUpperCase();
     ui.changeQueueContents(detect.currentQueue);
 }
 

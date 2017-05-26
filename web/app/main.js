@@ -40,8 +40,6 @@ $(function() {
 
 
   $( function() {
-//    $( ".draggable" ).draggable();
-	// TODO: toggle draggable
   } );
 
 

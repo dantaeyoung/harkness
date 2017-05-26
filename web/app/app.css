@@ -162,3 +162,7 @@ path {
 #log.hideDetails .details {
     opacity: 0;
 }
+
+.infotext {
+  font-size: 0.7em;
+}
