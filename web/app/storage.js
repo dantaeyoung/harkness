@@ -10,7 +10,7 @@ storage.storeLog = function(prevS) {
 
 storage.sendAjax = function(data) {
 	$.get(
-        "//vps.provolot.com/manila_api/add_comment?meetingname=" + storage.meetingName + "?comment=" + encodeURIComponent(data),
+        "//vps.provolot.com/manila_api/add_comment?meetingname=" + storage.meetingName + "&comment=" + encodeURIComponent(data),
         function(data) {
             console.log("Response: " + data);
         }
