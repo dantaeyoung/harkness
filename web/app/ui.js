@@ -23,6 +23,9 @@ ui.makeUI = function() {
         if(e.toElement.name == "graphWeightsToggle") {
             table.toggleWeights();
         }
+        if(e.toElement.name == "graphMinWeightsToggle") {
+            table.toggleMinWeights();
+        }
         if(e.toElement.name == "detailsToggle") {
             ui.toggleDetails();
         }
@@ -33,7 +36,7 @@ ui.makeUI = function() {
 }
 
 ui.updateLog = function(pn, nn, d) {
-    var txt = people.data[nn]['firstname'] + " responded to " + people.data[pn]['firstname'];
+    var txt = "<span class='from'>" + people.data[nn]['firstname'] + "</span> responded after <span class='to'>" + people.data[pn]['firstname'] + "</span>";
     var details = " for " + helpers.humanizeDuration(d) + " at " + moment().format("hh:mm a") + ".";
     console.log(txt + details);
     var logDiv = $("<div class='logentry'></div>");

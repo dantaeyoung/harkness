@@ -1,0 +1,175 @@
+@-webkit-keyframes BackgroundGradient {
+    0%{background-position:0% 7%}
+    50%{background-position:100% 94%}
+    100%{background-position:0% 7%}
+}
+@-moz-keyframes BackgroundGradient {
+    0%{background-position:0% 7%}
+    50%{background-position:100% 94%}
+    100%{background-position:0% 7%}
+}
+@keyframes BackgroundGradient { 
+    0%{background-position:0% 7%}
+    50%{background-position:100% 94%}
+    100%{background-position:0% 7%}
+}
+
+#uimenu {
+    background-color: white;
+    z-index: 5;
+    position: fixed;
+    bottom: 0px;
+}
+
+button {
+  outline: none;
+    
+}
+#plumbdiv {
+    z-index: 5;
+}
+#gradient {
+    opacity: 0.4;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100vw;
+    height: 100vh;
+    z-index: -10;
+    background: linear-gradient(293deg, #ef3ef9, #4dc831, #ff8a3b, #f74278, #625fff, #ffe286, #86e3ff, #ff86c5, #5ee669, #ffffff, #af6cc3, #503d56, #dd33aa);
+    background-size: 2600% 2600%;
+
+    -webkit-animation: BackgroundGradient 100s ease infinite;
+    -moz-animation: BackgroundGradient 100s ease infinite;
+    animation: BackgroundGradient 100s ease infinite;
+
+}
+
+body {
+	margin: 0px;
+	padding: 0px;
+	height: 100%;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+.flexcontainer {
+	height:100vh;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: row;
+}
+#persondiv {
+}
+.centerdiv {
+	position: absolute;
+}
+path {
+    transition: all 2s;
+}
+.person { 
+}
+
+
+.queueContents {
+    height: 18px;
+    width: 100%;
+    padding: 5px 10px;
+    background-color: #EEE;
+    font-weight: bold;
+    color: #D83435;
+    font-size: 1em;
+    
+}
+
+.person {
+    position: absolute;
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+    margin: 10px; 
+    border: 10px solid rgba(0,0,0,0);
+    border-radius: 45px;
+    z-index: 10;
+}
+
+@import "colors_normal.scss";
+
+.person-inner {
+	width: 40px;
+	height: 40px;
+	padding: 5px;
+  color: $person-color;
+	border: 5px solid $person-border;
+  background-color: $person-backg;
+    border-radius: 45px;
+    text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+    font-weight: bold;    
+}
+.person.speaking {
+    border: 10px dotted white;
+}
+
+.person.speaking .person-inner {
+    background-color: $person-speaking-backg !important;
+    color: $person-speaking-color !important;
+    border-color: $person-speaking-border;
+}
+
+.person.highlight {
+    border: 10px double $person-highlight-border;
+}
+
+.initials {
+    font-size: 1.2em;
+    line-height: 0.8em;
+}
+
+.firstname {
+    font-size: 0.95em;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none;   /* Chrome/Safari/Opera */
+  -khtml-user-select: none;    /* Konqueror */
+  -moz-user-select: none;      /* Firefox */
+  -ms-user-select: none;       /* Internet Explorer/Edge */
+  user-select: none;           /* Non-prefixed version, currently
+                                  not supported by any browser */
+}
+
+.details {
+}
+
+#log {
+    resize: vertical;
+    width: 100vw;
+    height: 50px;
+    overflow-y: scroll;
+    font-size: 0.8em;
+    padding: 10px;
+    border-top: 5px solid white;
+
+  .details {
+    transition: opacity 1s;
+  }
+  &.hideDetails .details {
+    opacity: 0;
+  }
+
+  .from {
+    font-weight: bold;
+  }
+}
+
+.infotext {
+  font-size: 0.7em;
+}

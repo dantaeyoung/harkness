@@ -1,6 +1,6 @@
 table = {};
 table.linkPixelPerSecond = 1;
-table.linkWidthMin = 0.75;
+table.linkWidthMin = 0.7; 
 table.linkWidthMax = 20;
 table.linkColor = "#000";
 table.responseColor = "#F5A645";
@@ -82,6 +82,12 @@ table.makeTable = function() {
 
 table.toggleWeights = function() {
     table.showWeights = !table.showWeights;
+    table.updateLinks();
+}
+
+table.toggleMinWeights = function() {
+    if(table.linkWidthMin > 0.5) table.linkWidthMin = 0;
+    else table.linkWidthMin = 0.7;
     table.updateLinks();
 }
 
