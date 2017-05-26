@@ -159,6 +159,7 @@ table.promptSaveLocations = function() {
 
     // pickle
     alert(JSON.stringify(locations));
+    console.log(JSON.stringify(locations));
 }
 
 table.promptLoadLocations = function() {

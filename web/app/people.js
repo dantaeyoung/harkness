@@ -4,6 +4,7 @@ people.data = {};
 
 people.loadPeople = function() {
 
+    // TODO: edit this to add names
     var manualList = [
         ["AT", "Andrew Tinari"],
         ["CK", "Chad Paul Karty"],
