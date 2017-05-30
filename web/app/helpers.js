@@ -9,10 +9,14 @@ helpers.cloneObj = function(obj) {
 }
 
 helpers.humanizeDuration = function(d) {
-    var dur = moment.duration(d);
-    if(dur._data.hours > 0) { return dur.humanize(); }
-    if(dur._data.minutes > 0){   return dur._data.minutes + ' minutes and '   + helpers.humanizeSeconds(dur._.data.seconds);}
-    return helpers.humanizeSeconds(dur._data.seconds); 
+    try { // TODO: fix this;
+      var dur = moment.duration(d);
+      if(dur._data.hours > 0) { return dur.humanize(); }
+      if(dur._data.minutes > 0){   return dur._data.minutes + ' minutes and '   + helpers.humanizeSeconds(dur._.data.seconds);}
+      return helpers.humanizeSeconds(dur._data.seconds); 
+    } catch(err) {
+      return "ERR";
+    }
 }
 
 helpers.humanizeSeconds = function(secs) {

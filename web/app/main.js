@@ -26,7 +26,7 @@ $(function() {
 
 	table.start();
 
-    var loadString = '{"AT":{"top":523,"left":129},"CK":{"top":37,"left":88},"CD":{"top":488,"left":59},"DC":{"top":338,"left":415},"DP":{"top":525,"left":337},"IN":{"top":9,"left":199},"JP":{"top":87,"left":34},"MS":{"top":144,"left":390},"NJ":{"top":387,"left":30},"RN":{"top":57,"left":356},"RS":{"top":544,"left":231},"TZ":{"top":280,"left":-3},"VL":{"top":244,"left":406},"VW":{"top":427,"left":388},"YK":{"top":188,"left":22},"DT":{"top":21,"left":284}}';
+    var loadString = '{"DT":{"top":556,"left":82},"FT":{"top":460,"left":29},"RR":{"top":311,"left":1},"LW":{"top":202,"left":13},"TK":{"top":118,"left":34},"MH":{"top":40,"left":117},"SH":{"top":14,"left":220},"JV":{"top":49,"left":384},"AM":{"top":116,"left":477},"DH":{"top":29,"left":307},"JA":{"top":215,"left":536},"RT":{"top":305,"left":545},"RD":{"top":395,"left":518},"KSK":{"top":526,"left":451},"NP":{"top":25,"left":562},"AA":{"top":568,"left":370},"AS":{"top":591,"left":282},"MW":{"top":590,"left":185}}';
 
 	table.loadLocations(loadString);
 

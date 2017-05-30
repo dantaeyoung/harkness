@@ -6,22 +6,24 @@ people.loadPeople = function() {
 
     // TODO: edit this to add names
     var manualList = [
-        ["AT", "Andrew Tinari"],
-        ["CK", "Chad Paul Karty"],
-        ["CD", "Clara Celeste Dobiesz Dykstra"],
-        ["DC", "Dexter Callender"],
-        ["DP", "Dongfang Pang"],
-        ["IN", "Isabel Narea"],
-        ["JP", "Julie Pedtke"],
-        ["MS", "Miranda Shugars"],
-        ["NJ", "Nishant Jacob"],
-        ["RN", "Rachel Ka-Yen Ng"],
-        ["RS", "Ray Santay"],
-        ["TZ", "Taylor Zanke"],
-        ["VL", "Valerie Lechene"],
-        ["VW", "Violet Whitney"],
-        ["YK", "Yassi Kazemzadeh"],
-        ["DT", "Dan Taeyoung"]
+        ["DT", "Dan"],
+        ["FT", "Francis"],
+        ["RR", "Rachel"],
+        ["LW", "Zon"],
+        ["TK", "Calvin"],
+        ["MH", "Melanie"],
+        ["SH", "Sam"],
+        ["JV", "James"],
+        ["AM", "Alex"],
+        ["DH", "David"],
+        ["JA", "James"],
+        ["RT", "Ruth"],
+        ["RD", "Ritwik"],
+        ["KSK", "Kira"],
+        ["NP", "NewPerson"],
+        ["AA", "Addy"],
+        ["AS", "Austin"],
+        ["MW", "Marty"]
     ] 
 
     _.each(manualList, function(p) {
