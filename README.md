@@ -1,8 +1,17 @@
-# harkness
+# Harkness
 
-Harkness table - diagram tracking
+Harkness table diagram discussion tracking
 
 ![harkness_example_small.gif](https://github.com/dantaeyoung/harkness/blob/master/harkness_example_small.gif)
+
+How-to:
+
+- To select current speaker:
+    - Keyboard shortcuts - type initials and press enter to select next person
+    - Mouse input: double-click on the person to select them.
+- People names / initials stored in 'helpers.js' (TODO: move elsewhere)
+- Position of people can be dragged and saved/loaded with buttons
+
 
 References:
 - [Harkness table](https://en.wikipedia.org/wiki/Harkness_table)
