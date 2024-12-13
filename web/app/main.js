@@ -42,6 +42,14 @@ $(function() {
   $( function() {
   } );
 
+    window.addEventListener("beforeunload", function (event) {
+    // Custom message (not all browsers display it, but it triggers the dialog)
+    const message = "Are you sure you want to leave?";
+    event.preventDefault(); // Standard requirement for beforeunload
+    event.returnValue = message; // Required for some browsers
+    return message;
+});
+
 
 });
 

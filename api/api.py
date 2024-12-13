@@ -55,10 +55,10 @@ def add_comment():
         try:
             result = collection_on_compose.insert_one(tab)
 
-            print "Inserted: ", result.inserted_id, " >> ", meetingname, " : ", comment
+            print( "Inserted: ", result.inserted_id, " >> ", meetingname, " : ", comment)
             return "Inserted: " + str(result.inserted_id)
         except Exception:
-            print "error: not inserted", tab
+            print( "error: not inserted", tab)
             return "error: not inserted", tab
 
     else:
